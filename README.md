@@ -1,4 +1,4 @@
-# TerminalRoastDB
+# TerminalRoastDB v.0.0.1
 Basic minimal scripting to run a roast recipe from MySQL DB on Fresh Roast SR700 coffee roaster
 
 # Usage
@@ -21,6 +21,9 @@ Requirements are Python3, MySQL Database server.
 Ubuntu Linux
 
     sudo apt-get install git python3 python3-pip python3-mysql.connector mysql-server 
+    git clone https://github.com/infinigrove/TerminalRoastDB.git
+    cd TerminalRoastDB
+    pip3 install -r requirements.txt
     
     
 # Setup MySQLDB
@@ -31,3 +34,8 @@ Ubuntu Linux
 
 Make sure user terminalroaster has access to database terminalroastDB and run SQL in TerminalRoastDB/sql/TerminalRoastDB_create_DB_tables.sql for this database.
 
+#ToDo
+
+- Web LAMP front end to maintain recipies
+- Web LAMP front end to control roaster
+- Log roast data to MySQL during roast
