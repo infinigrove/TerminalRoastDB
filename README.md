@@ -41,3 +41,4 @@ For detailed information on database structure, please refer to wiki page: [MySQ
 - Web LAMP front end to maintain recipies
 - Web LAMP front end to control roaster
 - Log roast data to MySQL during roast
+- Import JSON recipes
