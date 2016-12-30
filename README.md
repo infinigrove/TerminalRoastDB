@@ -34,6 +34,8 @@ Ubuntu Linux
 
 Make sure user terminalroaster has access to database terminalroastDB and run SQL in TerminalRoastDB/sql/TerminalRoastDB_create_DB_tables.sql for this database.
 
+For detailed information on database structure, please refer to wiki page: [MySQL terminalroastDB tables and fields](https://github.com/infinigrove/TerminalRoastDB/wiki)
+
 #ToDo
 
 - Web LAMP front end to maintain recipies
