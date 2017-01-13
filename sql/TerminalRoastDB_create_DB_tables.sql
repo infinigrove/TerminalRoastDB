@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.16, for Linux (x86_64)
 --
--- Host: localhost    Database: roastDB
+-- Host: localhost    Database: terminalroastDB
 -- ------------------------------------------------------
 -- Server version	5.7.16-0ubuntu0.16.04.1
 
@@ -119,11 +119,11 @@ INSERT INTO `roaster_recipe_step` VALUES (1,16);
 UNLOCK TABLES;
 
 --
--- Dumping events for database 'roastDB'
+-- Dumping events for database 'terminalroastDB'
 --
 
 --
--- Dumping routines for database 'roastDB'
+-- Dumping routines for database 'terminalroastDB'
 --
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
