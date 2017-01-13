@@ -25,7 +25,7 @@ class Roaster(object):
         """This is a method that will be called every time a packet is opened
         from the roaster."""
         cur_state = self.roaster.get_roaster_state()
-        print("Current Temperature:", self.roaster.current_temp, cur_state, " Recipe last step = ", self.total_steps)
+        print("Current Temperature:", self.roaster.current_temp, cur_state)
 
     def next_state(self):
         """This is a method that will be called when the time remaining ends.

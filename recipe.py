@@ -28,9 +28,7 @@ class Recipe(object):
         stepsCur = self.db.cursor()
         stepsSql = "SELECT * FROM recipe_steps WHERE recipe_id = %s ORDER BY seqNum"
         stepsCur.execute(stepsSql, (self.currentRecipeID,))
-        for row in stepsCur.fetchall():
-            last_step_num = row[5]
-        return last_step_num
+        return stepsCur.rowcount - 1
 
     def get_current_step_number(self):
         curStepCur = self.db.cursor()
