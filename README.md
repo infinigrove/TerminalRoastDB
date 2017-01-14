@@ -13,6 +13,7 @@ To start the TerminalRoastDB server daemon
     ./TerminalRoastDB.sh
 
 You will need to enter your sudo password.
+
 To run your roast or send commands to the roaster login with a second terminal session and go into the cmds directory.
 
     cd TerminalRoastDB/cmds
