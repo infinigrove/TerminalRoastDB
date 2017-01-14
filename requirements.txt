@@ -2,3 +2,4 @@ freshroastsr700>=0.1.0
 datetime
 mysqlclient
 pymysql
+Pyro4
