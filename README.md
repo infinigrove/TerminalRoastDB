@@ -1,18 +1,39 @@
-# TerminalRoastDB v.0.0.1
-Basic minimal scripting to run a roast recipe from MySQL DB on Fresh Roast SR700 coffee roaster
+# TerminalRoastDB v0.1.5
+Command line controller for Fresh Roast SR700 coffee roaster. Used to run a roast recipes stored in MySQL DB.
+
+TerminalRoastDB contains a server daemon that connects to the roaster and waits for commands.  Once the server is running commands can be issued from command line. 
 
 # Usage
-First make sure you are properly connected to the Fresh Roast SR700 coffee roaster
+To make sure you are able to connect to the Fresh Roast SR700 coffee roaster
 
     sudo python3 com_test.py
 
-Second test your recipe where 'X' is the recipe ID number.
+To start the TerminalRoastDB server daemon
 
-    sudo python3 TerminalRoastDB-test.py X
+    ./TerminalRoastDB.sh
 
-Now run your roast where 'X' is the recipe ID number.
+You will need to enter your sudo password.
+To run your roast or send commands to the roaster login with a second terminal session and go into the cmds directory.
 
-    sudo python3 TerminalRoastDB.py X
+    cd TerminalRoastDB/cmds
+    
+To run a roast recipe use the following command where X is the roast recipe ID number.
+
+    python3 Roaster_Run_Recipe.py X
+    
+To override the roaster fan speed use the following command where X is the fan speed(1-9).
+
+    python3 Roaster_Set_Fan.py X
+    
+To override the roaster temperature use the following command where X is the temperature in degrees fahrenheit.
+
+    python3 Roaster_Set_Temp.py X
+    
+To override the roaster timer use the following command where X is the time in seconds.
+
+    python3 Roaster_Set_Time.py X
+    
+Overrides to the fan speed, temperature, and timer only last for the duration of the current step.  When the next step of the recipe engages the step settings will be honored.
 
 # Setting Up A Development Environment
 
