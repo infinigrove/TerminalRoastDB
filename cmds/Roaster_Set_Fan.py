@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # TerminalRoastDB, released under GPLv3
 # Roaster Set Fan Speed
