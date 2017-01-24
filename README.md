@@ -54,6 +54,8 @@ Ubuntu Linux
 - Create user terminalroaster
 - with password terminalroasterpasswd
 
+(If you change database, user and password be sure to change the appropriate lines of code near the beginning of recipe.py)
+
 Make sure user terminalroaster has access to database terminalroastDB and run SQL in TerminalRoastDB/sql/TerminalRoastDB_create_DB_tables.sql for this database.
 
 For detailed information on database structure, please refer to wiki page: [MySQL terminalroastDB tables and fields](https://github.com/infinigrove/TerminalRoastDB/wiki)
