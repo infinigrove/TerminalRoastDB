@@ -82,6 +82,12 @@ class Roaster(object):
         new_time = int(time)
         self.roaster.time_remaining = new_time
 
+    def output_current_state(self):
+        cur_state = self.roaster.get_roaster_state()
+        cur_temp = str(self.roaster.current_temp)
+        ret_state = cur_temp + cur_state
+        return ret_state
+
 
 # Create a roaster object.
 r = Roaster()
